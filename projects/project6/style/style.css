@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+body{
+    font-family: "Assistant", sans-serif;
+    background-color: #E5EEFF;
+    padding: 296px 0 266px 0;
+}
+.container{
+    width: 1246px;
+    margin: auto;
+}
+.item1{grid-area: box1;}
+.item2{grid-area: box2;}
+.item3{grid-area: box3; text-align: center; background-color: #020253; padding: 150px 50px 50px 50px;}
+.item3 h1{
+    font-size: 61px;
+    color: #0EE1DA;
+}
+.item3 p{
+    font-size: 20px;
+    color: #F9F9F9;
+}
+.item4{grid-area: box4;}
+.item5{grid-area: box5;}
+.item6{grid-area: box6;}
+.item7{grid-area: box7;}
+.item8{grid-area: box8;}
+.item9{grid-area: box9;}
+.item10{grid-area: box10; direction: rtl; text-align: center; background-color: #8E097C; padding: 50px;}
+.item10 h2{
+    color: #FFFFFF;
+    font-size: 35px;
+}
+.item10 p{
+    color: #F9F9F9;
+    font-size: 20px;
+}
+.item10 form{
+    text-align: right;
+    margin-top: 60px;
+}
+.item10 form label{
+    font-size: 16px;
+    color: #0EE1DA;
+    font-weight: bold;
+}
+.item10 form input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 4px solid #0EE1DA;
+    margin-bottom: 20px;
+}
+.item10 form button{
+    font-family: "Assistant", sans-serif;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    color: #011560;
+    background-color: #0EE1DA;
+    padding: 10px 0;
+    font-size: 24px;
+}
+#exp{
+    height: 170px;
+}
+.item11{grid-area: box11;}
+.item12{grid-area: box12;}
+.item13{grid-area: box13;}
+.item14{grid-area: box14;}
+.item15{grid-area: box15;}
+.item16{grid-area: box16;}
+.grid-container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    'box1 box2 box3 box3'
+    'box4 box5 box3 box3'
+    'box6 box7 box8 box9'
+    'box10 box10 box11 box12'
+    'box10 box10 box13 box14'
+    'box10 box10 box15 box16';
+
+  
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+    }
+    .grid-container{
+        grid-template-areas:
+        'box3 box3'
+        'box1 box2'
+        'box4 box5'
+        'box6 box7'
+        'box8 box9'
+        'box10 box10'
+        'box11 box12'
+        'box13 box14'
+        'box15 box16';
+        gap: 0;
+    }
+    .item3{
+        padding: 70px 50px 150px 50px;
+    }
+    .item1, .item2, .item4, .item5, .item6, .item7, .item8, .item9, .item11, .item12, .item13, .item14, .item15, .item16{
+        padding: 10px;
+    }
+}

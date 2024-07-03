@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+$tcolor-green: #D3E10E;
+$tcolor-blue: #011560;
+$tcolor-white: #F9F9F9;
+$input-color: #F6F6F6;
+
+$font-size: (
+    'h1-xl': 86px,
+    'h1-sm': 36px,
+    'p-xl': 20px,
+    'p-sm': 15px,
+    'label-xl': 16px,
+    'label-sm': 10px,
+    'button-xl': 22px,
+    'button-sm': 14px
+);
+
+
+body{
+    font-family: "Assistant", sans-serif;
+    direction: rtl;
+    margin: 0;
+}
+
+.main-top{
+    height: 50vh;
+    text-align: center;
+    background-image: url(../images/Path\ 15.png);
+    background-position: center bottom;
+    background-size: cover;
+    padding: 180px 0 0 0;
+    margin: 0;
+
+    h1{
+        color: $tcolor-green;
+        font-size: map-get($font-size, h1-xl);
+        margin-bottom: 0;
+    }
+
+    p{
+        color: $tcolor-white;
+        font-size: map-get($font-size, p-xl);
+    }
+
+}
+
+.main-bottom{
+    text-align: center;
+    padding: 80px 450px;
+
+    .form{
+        display: flex;
+
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            margin: 0 20px;
+
+            input{
+                padding: 15px 110px;
+                background-color: $input-color;
+                border: none;
+                border-bottom: 4px solid $tcolor-green;
+            }
+
+            label{
+                color: $tcolor-blue;
+                font-size: map-get($font-size, label-xl);
+                font-weight: 700;
+            }
+
+            button{
+                font-family: "Assistant", sans-serif;
+                font-size: map-get($font-size, button-xl);
+                font-weight: 700;
+                color: $tcolor-blue;
+                background-color: $tcolor-green;
+                padding: 11px 45px;
+                border: none;
+            }
+        }
+    
+    }
+}
+#button-form{
+    padding: 21px 0 0 0;
+}
+
+@media screen and (max-width: 768px){
+    .main-top{
+        height: 30vh;
+        padding: 110px 0 0 0;
+
+        h1{
+            font-size: map-get($font-size, h1-sm);
+        }
+        p{
+            font-size: map-get($font-size, p-sm);
+        }
+    }
+    .main-bottom{
+        padding: 0;
+        margin-top: 100px;
+    }
+    .form{
+        flex-direction: column;
+
+        .form-group{
+            margin-bottom: 10px;
+            padding: 15px;
+            margin: 0 20px;
+
+            label{
+                font-size: map-get($font-size, label-sm);
+                margin-bottom: 3px;
+            }
+
+            input{
+                padding: 13px;
+            }
+        }
+    }
+    #button-form{
+        padding: 14px;
+    }
+}

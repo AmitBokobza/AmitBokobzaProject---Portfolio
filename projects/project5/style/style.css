@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+body {
+  font-family: "Assistant", sans-serif;
+  direction: rtl;
+  margin: 0;
+}
+
+.main-top {
+  height: 50vh;
+  text-align: center;
+  background-image: url(../images/Path\ 15.png);
+  background-position: center bottom;
+  background-size: cover;
+  padding: 180px 0 0 0;
+  margin: 0;
+}
+.main-top h1 {
+  color: #D3E10E;
+  font-size: 86px;
+  margin-bottom: 0;
+}
+.main-top p {
+  color: #F9F9F9;
+  font-size: 20px;
+}
+
+.main-bottom {
+  text-align: center;
+  padding: 80px 450px;
+}
+.main-bottom .form {
+  display: flex;
+}
+.main-bottom .form .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: 0 20px;
+}
+.main-bottom .form .form-group input {
+  padding: 15px 110px;
+  background-color: #F6F6F6;
+  border: none;
+  border-bottom: 4px solid #D3E10E;
+}
+.main-bottom .form .form-group label {
+  color: #011560;
+  font-size: 16px;
+  font-weight: 700;
+}
+.main-bottom .form .form-group button {
+  font-family: "Assistant", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #011560;
+  background-color: #D3E10E;
+  padding: 11px 45px;
+  border: none;
+}
+
+#button-form {
+  padding: 21px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main-top {
+    height: 30vh;
+    padding: 110px 0 0 0;
+  }
+  .main-top h1 {
+    font-size: 36px;
+  }
+  .main-top p {
+    font-size: 15px;
+  }
+  .main-bottom {
+    padding: 0;
+    margin-top: 100px;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .form .form-group {
+    margin-bottom: 10px;
+    padding: 15px;
+    margin: 0 20px;
+  }
+  .form .form-group label {
+    font-size: 10px;
+    margin-bottom: 3px;
+  }
+  .form .form-group input {
+    padding: 13px;
+  }
+  #button-form {
+    padding: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */

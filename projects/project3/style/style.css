@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+body{
+    direction: rtl;
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+.img-area{
+    flex: 75%;
+    background-image: url(../images/Coffee.png);
+    background-position: center center;
+    background-size: cover;
+}
+.container{
+    padding: 200px 250px;
+    border: 1px solid #707070;
+}
+.form-area{
+    flex: 50%;
+}
+.form h1{
+    font-size: 43px;
+    color: #020253;
+}
+.form p{
+    font-size: 20px;
+    color: #020253;
+}
+.form label{
+    color: #2C2C2C;
+    font-size: 16px;
+    font-weight: bold;
+}
+.form input{
+    padding: 15px 135px;
+    background-color: #E5EEFF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #020253;
+}
+.form button{
+    padding: 10px 40px;
+    background-color: #020253;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        flex-direction: column;
+    }
+    .container{
+        padding: 20px 18px;
+        flex: 100%;
+    }
+    .form h1{
+        font-size: 28px;
+    }
+    .form p{
+        font-size: 15px;
+    }
+    .form label{
+        font-size: 10px;
+    }
+    .form input{
+        padding: 10px 100px;
+    }
+    .form button{
+        font-size: 14px;
+        padding: 10px 165px;
+    }
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+body{
+    direction: rtl;
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+}
+
+.main-row{
+    height: 100%;
+}
+.picture-area{
+    text-align: center;
+    padding: 100px 100px 0 100px;
+    position: relative;
+}
+.yellow-line{
+    background-color: #FDBD03;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+.form-area{
+    display: flex;
+    padding: 150px 30px 0 200px;
+    position: relative;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-row h1{
+    font-size: 66px;
+    color: #FDBD03;
+    font-weight: 900;
+}
+.form-row p{
+    font-size: 20px;
+    color: #020253;
+}
+.form-group label{
+    font-size: 16px;
+    color: #2C2C2C;
+    font-weight: 700;
+}
+.form-group input{
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 4px solid #FDBD03;
+    padding: 25px 0 0 0;
+}
+.form-group button{
+    width: fit-content;
+    margin-top: 50px;
+    background-color: #FDBD03;
+    color: #000000;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 8px 40px;
+}
+#big-input{
+    padding: 100px 0 0 0;
+}
+
+.yellow-line-bottom{
+    background-color: #FDBD03;
+    height: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+}
+.top-left-button{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.top-left-button button{
+    padding: 15px;
+    border: none;
+    background-color: #FDBD03;
+    border-radius: 50px;
+}
+.bottom-left-buttons{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+.bottom-left-buttons button{
+    box-shadow: 0px 3px 6px #00000029;
+    margin-right: 25px;
+    padding: 15px;
+    border: none;
+    background-color: #FDBD03;
+    border-radius: 50px;   
+}
+#f-button{
+    padding: 15px 24px;
+}
+
+@media screen and (max-width: 768px){
+    .picture-area{
+        padding: 70px 0 0 0;
+    }
+    .yellow-line{
+        width: 90%;
+    }
+    .picture-area img{
+        height: 120px;
+        width: 80px;
+    }
+    .top-left-button{
+        display: none;
+    }
+    .form-area{
+        padding: 0 35px 35px 35px;
+        text-align: center;
+    }
+    .form-group{
+        text-align: right;
+    }
+    .form-group button{
+        width: unset;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .form h1{
+        font-size: 40px;
+    }
+    .form p{
+        font-size: 15px;
+    }
+    .form input{
+        padding: 10px 0 0 0;
+        margin-bottom: 10px;
+    }
+    .form label{
+        font-size: 10px;
+    }
+    .bottom-left-buttons button{
+        padding: 15px 20px;
+    }
+    #f-button{
+        padding: 15px 20px;
+    }
+    .bottom-left-buttons button img{
+        width: 15px;
+        height: 15px;
+    }
+    .yellow-line-bottom{
+        width: 100%;
+        bottom: -30px;
+    }
+    .bottom-left-buttons{
+        position: static;
+        margin: 75px 8px 0 13px;
+    }
+}

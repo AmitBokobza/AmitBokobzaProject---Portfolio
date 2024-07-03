@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+body{
+    margin: 0;
+    direction: rtl;
+    font-family: "Heebo", sans-serif;
+}
+.form-box{
+    position: absolute;
+    top: 150px;
+    right: 350px;
+    background-color: #1A1A1AD4;
+    color: #FFFFFF;
+    padding: 50px 40px 150px 40px;
+}
+.form h1{
+    font-size: 36px;
+}
+.form p{
+    font-size: 20px;
+}
+.form input{
+    border: 1px solid #D31C75;
+    padding: 15px 120px;
+}
+.form button{
+    background-color: #D31C75;
+    color: #FFFFFF;
+    font-size: 22px;
+    padding: 10px 40px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 0.33px;
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        background-size: contain;
+    }
+    .hero-section{
+        width: 100vw;
+        height: 40vh;
+    }
+    .hero-section img{
+        display: none;
+    }
+    .hero-section{
+        background-image: url(../images/Path\ 15.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    .form-box{
+        right: 30px;
+        padding: 50px 30px 150px 30px;
+    }
+    .form h1{
+        font-size: 25px;
+    }
+    .form p{
+        font-size: 15px;
+    }
+    .form input{
+        padding: 7px 70px;
+    }
+    .form button{
+        padding: 7px 25px;
+    }
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+body{
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    height: 100vh;
+    color: #FFFFFF;
+    direction: rtl;
+}
+.main-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.text-area h1{
+    font-family: "Satisfy", cursive;
+    font-size: 160px;
+    text-shadow: 0px 0px 36px #00000087;
+}
+.text-area h2, p{
+    font-family: "Varela Round", sans-serif;
+}
+.text-area h2{
+    font-size: 36px;
+}
+.text-area p{
+    font-size: 16px;
+}
+.contact-form{
+    display: flex;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 20px 25px 0 20px;
+}
+.form-group input{
+    padding: 7px 125px;
+    border: 2px solid #FFFFFF;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+.form-group button{
+    font-family: "Varela Round", sans-serif;
+    color: #1C1C1C;
+    margin-top: 25px;
+    padding: 9px 55px;
+    border: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px){
+    .text-area h1{
+        font-size: 60px;
+    }
+    .text-area h2{
+        font-size: 18px;
+    }
+    .text-area p{
+        font-size: 16px;
+    }
+    .contact-form{
+        display: block;
+    }
+    .form-group input{
+        padding: 7px 70px;
+    }
+}

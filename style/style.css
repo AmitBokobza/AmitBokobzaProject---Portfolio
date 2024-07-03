@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body{
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+}
+.blue-line{
+    width: 100%;
+    height: 3px;
+    background-color: #1AE0EC;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.header{
+    position: sticky;
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    padding: 10px;
+    top: 0;
+    z-index: 100;
+}
+.header-left{
+    flex: 50%;
+    text-align: center;
+}
+.header-left p{
+    display: inline-block;
+    font-size: 25px;
+    font-family: "Satisfy", cursive;
+    margin: 10px;
+}
+.header-right{
+    flex: 35%;
+    text-align: center;
+}
+.mobile-menu{
+    display: none
+}
+.line-menu{
+    height: 5px;
+    width: 40px;
+    background-color: #1AE0EC;
+    margin: 10px;
+    border-radius: 25px;
+}
+.header-right a{
+    text-decoration: none;
+    font-size: 25px;
+    margin: 20px;
+    color: #000000;
+    transition: color 0.3s;
+}
+.header-right a:hover{
+    color: #1AE0EC;
+}
+
+.hero-section{
+    text-align: center;
+    background-image: url(../images/header-background.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 150px 0;
+    position: relative;
+}
+.hero-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #13E8F163;
+    opacity: 0.9;
+}
+.hero-section h1{
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+}
+.hero-section p{
+    font-size: 20px;
+    position: relative;
+}
+.logo-container{
+    box-shadow: 0px 3px 6px #00000029;
+}
+.logo-row{
+    width: 40%;
+    margin: auto;
+}
+.logos{
+    margin: 0;
+}
+.logos img{
+    transform: scale(0.9);
+    transition: transform 0.2s;
+}
+.logos img:hover{
+    transform: scale(1);
+}
+
+.about-section{
+    text-align: center;
+    padding: 100px;
+}
+.about-section img{
+    width: 140px;
+    height: 140px;
+    margin: 15px;
+}
+.about-section h2{
+    font-size: 35px;
+    font-weight: 900;
+    color: #3A3A3A;
+}
+.about-section p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.about-section a{
+    color: #000000;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 3px 25px;
+    border: none;
+    background-color: #1AE0EC;
+    border-radius: 25px;
+}
+
+.portfolio-area{
+    background-color: #F6F6F6;
+    padding: 100px 250px;
+}
+.text-area{
+    text-align: center;
+}
+.text-area h2{
+    font-size: 36px;
+    font-weight: 900;
+    color: #3A3A3A;
+}
+.text-area p{
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.works-row{
+    gap: 40px;
+}
+.works{
+    width: calc(33% - 30px);
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 15px #00000029;
+    padding: 0 0 70px 0;
+    margin-top: 50px ;
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.4s;
+}
+.works:hover{
+    transform: scale(1.01);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.40);
+}
+
+.works img{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+.works h3{
+    font-size: 23px;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin: 35px 0 0;
+}
+.works p{
+    font-size: 16px;
+}
+.works a{
+    margin: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #3A3A3A;
+    background-color: #1AE0EC;
+    border-radius: 25px;
+    padding: 5px 20px;
+    font-weight: 700;
+}
+.works-logos{
+    margin: 25px 0;
+}
+.works-logos img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+
+}
+
+
+.contact-section{
+    background-color: #3A3A3A;
+    color: #FFFFFF;
+}
+.contact-right{
+    direction: rtl;
+    padding: 150px 250px 100px 0;
+}
+.contact-form h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+.contact-form p{
+    font-size: 20px;
+}
+.contact-form input{
+    padding: 15px 200px;
+    border-bottom: 4px solid #1AE0EC;
+}
+#contact-exp{
+    padding: 30px 200px;
+}
+.contact-form button{
+    background-color: #1AE0EC;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 900;
+    padding: 5px 50px;
+    border-radius: 25px;
+    border: none;
+}
+
+.footer{
+    background-color: #1AE0EC;
+    padding: 70px 0 2px 0;
+}
+.footer-row{
+    text-align: center;
+    padding: 15px 15px 0 15px;
+}
+.footer-logo p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.footer-black{
+    margin-top: 40px;
+    background-color: #000000;
+    color: #1AE0EC;
+}
+.black-left{
+    text-align: left;
+    font-size: 20px;
+}
+.black-right{
+    text-align: right;
+    font-size: 20px;
+}
+
+@media screen and (width: 1350px){
+    .logos{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .hero-section h1{
+        font-size: 46px;
+    }
+    .hero-section p{
+        font-size: 15px;
+    }
+    .about-section p{
+        font-size: 15px;
+    }
+    .about-section a{
+        font-size: 10px;
+    }
+    .logo-row{
+        width: 100%;
+    }
+    .logos{
+       width: 25%;
+    }
+    .logos img{
+        transform: scale(0.7);
+    }
+    .header-right{
+        text-align: right;
+        direction: rtl;
+        flex: 50%;
+    }
+    .navbar-nav{
+        flex-direction: column-reverse;
+    }
+    .mobile-menu{
+        display: inline-block;
+        background-color: white;
+        border: none;
+    }
+    .header-left p{
+        display: none;
+    }
+    .header-left{
+        text-align: left;
+    }
+    .portfolio-area{
+        padding: 50px;
+    }
+    .works{
+        width: 100%;
+    }
+    .works img{
+        height: 200px;
+    }
+    .works-logos img{
+        height: 30px;
+    }
+
+    .contact-right{
+        padding: 30px;
+    }
+    .contact-form h2{
+        font-size: 25px;
+    }
+    .contact-form p{
+        font-size: 15px;
+    }
+    .contact-form label{
+        font-size: 12px;
+    }
+    .contact-form button{
+        font-size: 12px;
+        padding: 5px 30px;
+    }
+    .contact-form input{
+        padding: 5px 100px;
+    }
+    #contact-exp{
+        padding: 20px 100px;
+    }
+
+    .contact-left img{
+        width: 180px;
+        height: 170px;
+    }
+
+    .footer-row{
+        justify-content: center;
+    }
+    .footer-logo{
+        width: 50%;
+    }
+    .black-left{
+        width: 50%;
+        font-size: 9px;
+    }
+    .black-right{
+        width: 50%;
+        font-size: 9px;
+    }
+}
