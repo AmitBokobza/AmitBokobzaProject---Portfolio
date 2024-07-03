@@ -134,7 +134,7 @@ body{
 
 .portfolio-area{
     background-color: #F6F6F6;
-    padding: 100px 250px;
+    padding: 100px 200px;
 }
 .text-area{
     text-align: center;
@@ -262,9 +262,15 @@ body{
     font-size: 20px;
 }
 
-@media screen and (width: 1350px){
+@media screen and (max-width: 1350px){
     .logos{
         margin: 0;
+    }
+    .portfolio-area{
+        padding: 100px 30px;
+    }
+    .contact-left img{
+        width: 300px;
     }
 }
 @media screen and (max-width: 1024px){
