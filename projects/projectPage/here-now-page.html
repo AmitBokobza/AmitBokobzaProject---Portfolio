@@ -17,7 +17,7 @@
     ></script>
     <link rel="stylesheet" href="../../style/style.css" />
     <style>
-      .header-left{
+    .header-left{
         flex: none;
         padding-left: 100px;
       }
@@ -25,16 +25,20 @@
         text-decoration: none;
         color:#3a3a3a ;
       }
-      .hero-section a {
+       .hero-section a {
         margin: 10px;
         text-decoration: none;
         font-size: 14px;
         color: #3a3a3a;
-        background-color: #1ae0ec;
+        background-color: #00BFFF;
         border-radius: 25px;
         padding: 5px 35px;
         font-weight: 700;
         position: relative;
+        transition: background-color 0.3s ease;
+      }
+      .hero-section a:hover{
+        background-color: #00A3E0;
       }
       .logo-container {
         box-shadow: 0px 3px 6px #00000029;
@@ -54,13 +58,19 @@
         text-align: center;
       }
       .project-img img {
-        max-width: 1000px;
+        max-width: 1100px;
+        height: 500px;
         box-shadow: 0px 0px 40px #00000066;
       }
       .footer-black {
         margin-top: 0;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
+        .project-img img{
+          width: 700px;
+        }
+      }
+      @media screen and (max-width: 800px) {
         .logo-row {
           width: 100%;
         }
@@ -72,6 +82,7 @@
         }
         .project-img img {
           max-width: 300px;
+          max-height: 250px;
         }
       }
     </style>
