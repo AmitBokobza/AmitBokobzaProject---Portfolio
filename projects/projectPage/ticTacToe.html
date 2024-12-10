@@ -12,7 +12,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../style/style.css" />
     <style>
-         .header-left{
+          .header-left{
         flex: none;
         padding-left: 100px;
       }
@@ -77,6 +77,15 @@
         }
         .project-img img {
           max-width: 300px;
+          max-height: 250px;
+        }
+      }
+      @media screen and (max-width: 400px) {
+          .hero-section a {
+            padding: 5px 20px;
+          }
+          .project-img img {
+          max-width: 250px;
           max-height: 250px;
         }
       }
