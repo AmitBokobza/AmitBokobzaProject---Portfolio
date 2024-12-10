@@ -27,6 +27,15 @@ class User {
 
 //pushes new user object to array
 function newUser() {
+    if (
+        fName.value === "" || 
+        lName.value === "" || 
+        eMail.value === "" || 
+        password.value === ""
+    ) {
+        alert("Please fill out all fields.");
+        return;
+    }
     users.push(new User(fName.value, lName.value, eMail.value, password.value));
     console.log(users);
 
